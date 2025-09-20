@@ -3,6 +3,8 @@ FROM node:18
 
 WORKDIR /app
 
+RUN npm install -g nodemon env-cmd
+
 COPY package.json package-lock.json* ./ 
 
 RUN npm install
